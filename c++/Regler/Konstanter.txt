@@ -1,0 +1,12 @@
+Konstanter er utrykk som spesifiserer en vis verdi
+Literal constant: viser til en verdi i et program. Kan være: integer, floating-point, karakterer, strenger, boolean, og bruker definerte literals
+ Integer numerals: Defines integer values, i.e no decimals. eks: 1, 1243, -543 Can be written in base 8  (0 prefix), base 10, or base 16 (0x) prefix.
+  Can be of type: int (default), unsigned (suffix: u), long (suffix: l), long long (suffix: ll). Can combine long, and unsigned variants
+ floating-point numerals: Values with decimals, or exponents. Decimal point: . , Exponents: XeY (X by ten at Y height) , Can be of types: double (default), float (suffix f), long double (Suffix: l)
+ Karakter, og string literals: Karakter literals: 'A' eller 'j'. String literals: "hei, jeg er meg". Typer for begge: char16_t (prefix: u), char32_t (prefix: U), wchar_t (L). Typer for bare strenger: UTF-8 (prefix: u8), raw string (prefix: R) Character literals can also represent a symbol followed by a character f.eks: \n
+  Raw strings are delineated by an R prefix, as well as a sequence of characters, followed by a parentheses, in which there is a sequence of characters, followed by the original sequence of characters (allows for using quotes, and backslashes in the string) 
+  Example: R"154(dett er en "streng" \.)154"
+ Bool: can have the value, true, or false value. Example bool x = true; or bool y = false; 
+ nullptr = nullu pointer value
+ const as a prefix tells the program to not alter the value of the following variable. F.eks: const int X = 150, or const double pi = 3.14.
+ #define: #define identifier replacement. bytter ut identifier med replacement i koden

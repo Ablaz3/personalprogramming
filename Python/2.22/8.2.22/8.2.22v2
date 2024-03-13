@@ -1,0 +1,11 @@
+from pylab import *
+def f(x):
+    return (9*x)
+x=1
+
+while f(x)<787:
+    print('Nar det er', x,'eifelltarn, bruker man', f(x),'kuler.')
+    x=x+1
+else:
+    x=x-1
+    print('Det storste antall eifelltarn du kan lage med 787 kuler er:', x,'Da bruker du', f(x),'kuler.')

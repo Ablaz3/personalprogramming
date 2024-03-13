@@ -1,0 +1,30 @@
+
+Compound statement: group of statements where each is terminated by its own semicolon, but all are grouped in a block of curly braces. This is considered a single statement, and therefore will work with flow control statements { statement1; statement2; statement3; }
+If: if followed by a condition will execute a following statement only if the condition is true: if (condition) statement
+else: following the statement with an else will cause a following statement to be run if the condition is false. if (condition) statement1 else statement2
+while: while followed by a condition will run a following statement when the condition is true, and when the statement has finished running, will chech again if the statement is true and if so run it again. This repeats. while (expression) statement
+do while: Do followed by a statement and while will execute this statement, then check if a condition specified after while is true, and if so will run the statement and evaluation again. Guarantees one run of the statement. do statement while (condition);
+For loop: for (initialization; condition; increase) statement; First does initialization once. Then checks if condition is true, runs statemnt, then runs increase. goes back to checking if condition is true. all fields can be left empty, no condition equals true.
+ You cannot separate expressions inside a {} in the intitialization condition or increase parts of the for loop because they are expressions, not statements. They can have multiple expressions however, by separating with a comma.
+ For loop can also be used for iterating over every step in a range. for (declaration : range) statement;  Range must be a variable with a range f.eks string. c then takes the value of the values in the range, in order and statement is done for each one of them.
+Break: leaves a loop immediately
+continue: skips the rest of the loop, and starts the next run through
+goto: goto label; immediately jumps to the label stated after it. To make a label, write a word, followed ny : somewhere in the program.
+switch: syntax: 
+switch (expression)
+{
+  case constant1:
+     group-of-statements-1;
+     break;
+  case constant2:
+     group-of-statements-2;
+     break;
+  .
+  .
+  .
+  default:
+     default-group-of-statements
+}
+
+checks if expression 1 matches with constant 1, if so, executes group of statements-1 until a break is found. if no break is found before another case, it executes that case's group of statements as well. if none of the cases match,
+ it executes the default group of statements. after a break is found, or the default group of statements has been executed, the program returns to the end of the expression, i.e }

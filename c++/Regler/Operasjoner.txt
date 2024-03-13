@@ -1,0 +1,20 @@
+Operasjoner
+Assignment: = leads to an assignment operation, where what is left of the = is assigned the value of what is to the right. this can happen within parentheses, ex: y + 5 + (x = 5)  --> y=10. X = y = z = 5, means that x y and z are equal to 5. (takes place from right)
+Arithmetic +, -, *, /, % (modulo, i.e rest division (11%3=2)) 
+Compound assignment: performs an operation on and assigns the new value to the first operand. examle:
+a += b  =  a = a+b,   
+a -= b  =  a = a-b
+a /= b  =  a = a/b
+Increment, og decrement: Can write ++, or --, to add or subtract 1 value of an operator. x++ = x=x+1. kan skrive x++, eller ++x. Hvis man skriver Y = x++, then y equals x before the addition is made, where as if you write y = ++x, then y equals 1+x.
+Relational and comparable variables: compare two variables or values, the result is a boolean value. == equal to, != not equal to, >, <, <=, >=. 
+Ekstra om boolske evalueringer: Skriver man ! foran evalueringen a = !(5==5). inverteres verdien av svaret. kan skrive 2 forskjellige evalueringer og && imellom for a bare bli true hvis begge stemmer, eller || for a bli true hvis en av de stemmer
+conditional ternary operator: syntax: condition ? result1 : result2.  EX: 7!=5 ? 45 : 32. Blir resultat 1 hvis condition er sant, og 2 hvis condition ikke er sant.
+Comma operator: separates two expressions where 1 is expected. example: a = (a=2, a+2). When the expressions are asked for a value, only the rightmost expression is considered. here a would end up being = 4
+Bitwise operators???
+explicit type casting operator: konverterer en verditype en annen. Setter typen foran verdien, med enten eller av de i parantes f.eks: for gjore fra float til int --> i = (int) i; 
+Sizeof: Syntax = sizeof(x). Where x is a data type or variable. Returns the bit size of the data type mentioned, or the bit size of the data type of the variable.
+Operation order: :: | ++ , -- , () , [] , . -> | ++ -- (prefix) , ~ , ! , + (unary prefix), - (unary prefix), & , * , new , delete , sizeof , (type) | .* , ->* | * , / , % | + , - | << , >> | < , > , <= , >= | == , != | & | ^ | | (bitwise or) | && | || | = , *= , /= , %= , += , -= , 
+>>= , <<= , &= , ^= , |= | ?: | , 
+
+
+operand=variabler, eller verdier som en operator fungerer pa

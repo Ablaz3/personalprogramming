@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+a=1
+b=2
+
+int main ()  // epic
+{
+    cout  << "Hello world! " ; 
+    cout << "This is a new line."; 
+    cout << "a+b"; 
+}

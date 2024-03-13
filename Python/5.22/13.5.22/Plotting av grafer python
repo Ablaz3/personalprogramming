@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt # her importerer jeg modulen
+  
+x = [1,2,3] # her lager jeg et array, som da er punktene i grafen på x aksen. 
+y = [2,4,1] # -II-
+
+plt.plot(x, y) #her plotter jeg listene mot hverandre
+  
+
+plt.xlabel('x - axis') # Her gir jeg navn på x aksen: 'x - axis'
+plt.ylabel('y - axis') # Her gir jeg navn på y aksen: 'y - axis'
+  
+plt.title('My first graph!') # gir tittell til grafen
+  
+plt.show() # får

@@ -1,0 +1,17 @@
+Overloaded functions: 
+to funksjoner kan hete det samme, hvis det er forskjellig antall parametere, eller forskjell på typene til parameterene.
+Template functions:
+Man kan lage en template funksjon, sånn at man kan bruke forskjellige typer data som parametere
+first you have to declare template classes
+syntax: template<class x, class y>
+then you can define a template function by writing the function normally, but switching the types, with template types (for this example, x, and y, as declared above)
+syntax: returntype name (x variable, y variable)
+to call a template function, you call it like you would normally, just with brackets specifying the type of data before the parameter parenthesis.
+syntax: name<type, type>(value,value)
+
+non type template arguments:
+in the template-variable/class declaration you can also declare non class/typename variables, just like in a normal function's parameters
+syntax: template(type variable) 
+ex: template(class T, int U)
+This second one will be used as a normal function parameter, but will be needed to be given a value, not a type in the brackets, and nothing in the paranthesis when calling the function. It also shall not be typed into the parameters of the function
+

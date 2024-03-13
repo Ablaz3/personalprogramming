@@ -1,0 +1,36 @@
+Function syntax
+type name (parameter 1, parameter 2, ...) {statement}
+type is the type of the value returned
+name is the name to call the Function
+parameters are local variables defined within the function. Syntax: (type name, type name, ...)
+statement is the actual statement of the function
+In a function, putting return value;, ends the function, and assigns value, to the place the function was called
+When calling a function:
+name (value, value, ...)
+where value is assigned to the local variables in corresponding order
+If a function is to return no value, specify type as void
+all functions that are of a return type should end with return and a value.
+main implicitly ends with return 0; signifying that it was succesfull. 
+Other return values for main:
+ EXIT_SUCCESS, same as 0
+ EXIT_FIALURE, denoting that main was a failure.
+
+Reference: syntax type& name. They can be used within the parameters of a function. 
+a reference is directly linked to the variable it takes the form of. It thereby changes this variable. 
+I.e is not local to the function. The variables are passed as reference, not value.
+for large coumpound types like strings, using references are more efficient, than the default, copies. 
+This is because copying large amounts of data takes time. To do this, without being able to modify the value.
+specify "const type& variable" in the parameters of the function, instead of just "type variable"
+
+specifying "inline" before a function, makes it insert the code where the function is called. 
+this makes short functions more efficient to run.
+
+Functions can be called with fewer values, than parameters, but to do se the parameters need to contain a default value.
+syntax in parameter: (type name=defaultvalue)
+ 
+To call a function, it has to be declared before the calling of it. You can define a function after it has been called,
+but you have to declare it beforehand, by writing the normal syntax for it, not needing variable names, and replacing
+statemetns with a single semicolon, no brackets. This is particularily useful in functions, that are mutually called 
+in each other. Where one has to be declared before the other is defined.
+Recursivity is a property a function has to have to if it should call itself. It is when the calling of itself is
+conditional on something that changes in the function itself. I.e, not ending in an infinite loop.

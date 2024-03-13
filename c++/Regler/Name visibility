@@ -1,0 +1,30 @@
+Scopes:
+an entity (function or varibale) declared outside a function will be usable in the entire code. This is called global scope
+when entered within a function or a selective statement, it can only be used within those, which is called block scope
+a variable declared in one block (function) will be usable inside blocks inside this (selective statements within the function). You can still declare them again within these inner blocks, doing this will make it so that if you now modifyt their value, the value
+in the outer block will not be changed
+
+namespaces
+if you want to use the same name for several entities, they have to be decalred in different namespaces.
+syntax to declare name space:
+namespace identifier
+{
+    entities_values
+}
+where identifier is the name of the namespace, and entities_values it the declaration, and definition of the entities.
+within a namespace you can call on the entities within, like normal
+to call entities from within a namespace outside it:
+syntax: 
+namespace_identifier::entity_name
+
+using: can be used to access a namespace/block several times from just one line of code
+typing: using namespace_identifier::entity
+will make it so until otherwise specified, that specific entity can be entered without the name of the namespace in front, and still be accesed from it
+typing: using namespace::namespace_identifier
+will make it so the program accessess entity names from that specific namespace for the rest of that block. 
+
+Namespaces can be given aliases
+syntax: namespace new_name = current_name;
+
+static storage: for global or namespace scope entities. variables that are declared in static storage, but not initialized will be automatically set to 0. (this seems to be the case for automatic storage as well in my compiler but shouldnt be so?)
+automatic storage: for local variables (wihtin block variables).
